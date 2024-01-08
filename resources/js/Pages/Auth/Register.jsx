@@ -12,6 +12,7 @@ export default function Register() {
         email: '',
         password: '',
         password_confirmation: '',
+        role: 'user', // Default role is 'user'
     });
 
     useEffect(() => {
@@ -98,6 +99,7 @@ export default function Register() {
 
                     <InputError message={errors.password_confirmation} className="mt-2" />
                 </div>
+                
 
                 <div className="flex items-center justify-end mt-4">
                     <Link
